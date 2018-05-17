@@ -1,8 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
 
 import React, { Component } from 'react';
 import {
@@ -34,15 +29,19 @@ class Squares extends Component<Props> {
 }
 componentWillMount(){
   this.setState({backcolors:this.state.allColors[this.props.current%7]})
+  this.setState({currentcolor:this.props.current})
 }
   alert(){
-    if(this.props.current%7 == 6){
+    if(this.state.currentcolor%7 == 6){
 
         this.setState({backcolors:this.state.allColors[0]})
+        this.setState({currentcolor:this.state.currentcolor+1})
     }
     else{
-    this.setState({backcolors:this.state.allColors[(this.props.current%7)+1]})
-  }
+        this.setState({backcolors:this.state.allColors[(this.state.currentcolor%7)+1]})
+        this.setState({currentcolor:this.state.currentcolor+1})
+    }
+
   }
   render() {
     return (
@@ -79,18 +78,5 @@ const styles = StyleSheet.create({
     flexWrap:'wrap',
     alignItems: 'flex-start',
     flexDirection: 'row'
-  },
-  Color: function(){
-
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  }
 });
