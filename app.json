@@ -1,4 +1,7 @@
 {
-  "name": "ColorSquares",
-  "displayName": "ColorSquares"
+  "expo": {
+    "name": "ColorSquares",
+    "slug": "ColorSquares",
+    "sdkVersion": "27.0.0"
+  }
 }

@@ -1,8 +1,8 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 4289,
-  "expoServerNgrokUrl": "https://tg-uis.kaylaf16.colorsquares.exp.direct",
-  "packagerNgrokUrl": "https://packager.tg-uis.kaylaf16.colorsquares.exp.direct",
-  "ngrokPid": 4308
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

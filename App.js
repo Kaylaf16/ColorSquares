@@ -55,7 +55,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     let squares = []
-      for (var i = 0;i < 49;i++)
+      for (let i = 0;i < 49;i++)
       {
         squares.push(<Squares current = {i}></Squares>)
       }
