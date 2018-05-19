@@ -1,4 +1,4 @@
-
+import Dimensions from 'Dimensions'
 import React, { Component } from 'react';
 import {
   Alert,
@@ -46,7 +46,7 @@ componentWillMount(){
   render() {
     return (
       <TouchableHighlight onPress={this.alert}>
-        <View style={{height:30,width:30,margin:10,backgroundColor:this.state.backcolors}}></View>
+        <View style={{height:40,width:(Dimensions.get('window').width/7.4),margin:1,marginTop:5,marginBottom:5,backgroundColor:this.state.backcolors}}></View>
       </TouchableHighlight>
     );
   }
@@ -72,7 +72,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     display:"flex",
-    padding:10,
     paddingTop:100,
     flex: 1,
     flexWrap:'wrap',
